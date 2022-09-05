@@ -248,13 +248,13 @@ class smartblogDetailsModuleFrontController extends smartblogModuleFrontControll
 				}
 			}
 		}
-		if (file_exists(_PS_MODULE_DIR_ . 'smartblog/views/templates/front/themes/'$themeName."/" .$tplName )) {
+		if (file_exists(_PS_MODULE_DIR_ . 'smartblog/views/templates/front/themes/.'$themeName."/" .$tplName )) {
 			return $themeName;
 		}
-		if (file_exists(_PS_MODULE_DIR_ . 'smartblog/views/templates/front/themes/default/' .$tplName )) {
+		if (file_exists(_PS_MODULE_DIR_ . 'smartblog/views/templates/front/themes/default/'.$tplName )) {
 			return "default";
 		}
-		if (file_exists(_PS_MODULE_DIR_ . 'smartblog/views/templates/front/' .$tplName )) {
+		if (file_exists(_PS_MODULE_DIR_ . 'smartblog/views/templates/front/'.$tplName )) {
 			return "outside";
 		}
 	}
